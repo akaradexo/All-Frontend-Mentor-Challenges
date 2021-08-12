@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --black1: #181818;
+    --black2: #202020;
+    --white1: #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background:  #202020;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color:#f6f2f2 ;
+    border-radius: 20px;
+  }
+html {
+  font-size: 16px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--white1);
+    background-color: var(--black1);
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 5rem;
+}
+
+
+.container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.challenge{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.challenge h1{
+    padding: 2rem;
+}
+
+.challenge-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+
+}
+.challenge-grid{
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: repeat(3,1fr);
+}
+.card{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid var(--white1);
+}
+.card:hover{
+    transform: scale(0.988);
+    transition: all 0.2s;
+}
+.card img{
+    max-width: 100%;
+    height: auto;
+    display:block;
+    border-radius: 10px ;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+
+.card .details{
+    width: 100%;
+    
+    padding: 0.8rem;
+}
+.card .details h2{
+    font-size: 2rem;
+    text-align: left;
+}
+.card .details .skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.6rem;
+}
+.card .details .skills img{
+    width: 3rem;
+}
+
+  @media (max-width:1190px){
+    .challenge-grid{
+      grid-template-columns: 2fr;
+    }
+  }
+  @media (max-width:767px){
+    .challenge-grid{
+      grid-template-columns: 1fr;
+    }
+    body {
+        margin: 0rem;
+    }
+    .button-outline {
+        min-height: 30px;
+        padding: 2px 4px;
+    }
+    .button-solid {
+        min-height: 30px;
+        padding: 2px 4px;
+    }
+  }
+
+  .btn{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0.8rem;
+  }
+ 
+
+
+
+
+/* CSS */
+.button-outline {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid var(--white1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #c0c0c0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+  }
+  
+  .button-outline:disabled {
+    pointer-events: none;
+  }
+  
+  .button-outline:hover {
+    color: var(--black2);
+    background-color: var(--white1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-outline:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+.button-solid {
+  appearance: none;
+  background-color: var(--white1);
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 40px;
+  min-width: 0;
+  outline: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-solid:disabled {
+  pointer-events: none;
+}
+
+.button-solid:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-solid:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.attribution{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.attribution h3{
+    text-align: center;
+}
