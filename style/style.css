@@ -120,6 +120,9 @@ body {
     }
   }
   @media (max-width:767px){
+    .challenge-wrapper{
+        padding: 1.5rem;
+    }
     .challenge-grid{
       grid-template-columns: 1fr;
     grid-gap: 2rem;
