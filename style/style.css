@@ -70,7 +70,7 @@ body {
 }
 .card{
     max-width: 100%;
-    height: auto;
+    min-height: 300px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -86,9 +86,9 @@ body {
     display:block;
     border-radius: 10px ;
     -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+	  transform: scale(1);
+	  -webkit-transition: .3s ease-in-out;
+	  transition: .3s ease-in-out;
 }
 
 
@@ -101,6 +101,7 @@ body {
 .card .details h2{
     font-size: 2rem;
     text-align: left;
+    min-height: 80px;
 }
 .card .details .skills {
     display: flex;
