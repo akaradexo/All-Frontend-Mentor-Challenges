@@ -115,9 +115,8 @@ body {
 
   @media (max-width:1190px){
     .challenge-grid{
-      grid-template-columns: 2fr;
+      grid-template-columns: repeat(2,2fr);
     grid-gap: 3rem;
-
     }
   }
   @media (max-width:767px){
